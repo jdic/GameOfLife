@@ -31,6 +31,7 @@ class GameOfLife
 
     if (live && (neighbors < 2 || neighbors > 3)) return false
     if (!live && neighbors === 3) return true
+    
     return live
   }
 
