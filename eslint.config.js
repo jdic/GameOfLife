@@ -9,6 +9,9 @@ import globals from 'globals'
 export default
 [
   {
+    ignores: ['dist']
+  },
+  {
     files: ['**/*.test.ts'],
     plugins:
     {
@@ -36,6 +39,7 @@ export default
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   {
+    ignores: ['**/*.js'],
     rules:
     {
       'arrow-spacing': ['warn', { 'before': true, 'after': true }],
@@ -78,7 +82,6 @@ export default
       'space-infix-ops': 'error',
       'space-unary-ops': 'error',
       'spaced-comment': 'error',
-      'yoda': 'error',
     },
   },
 ]
