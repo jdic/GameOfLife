@@ -16,15 +16,16 @@ The rules of the game are:
 
 The process can run indefinitely.
 
-## Usage
-To install dependencies:
+## Dev Note
 
-```bash
-bun install
-```
+`Hotfix`
 
-To run:
-
-```bash
-bun run app.ts
+```ts
+// dts-bundle-generator/dist/bundle-generator.js:672:27
+function getExportedSymbolsUsingSymbol(nodeSymbol) {
+  const symbolsUsingNode = typesUsageEvaluator.getSymbolsUsingSymbol(nodeSymbol);
+  if (symbolsUsingNode === null) {
+    ...
+    return []
+  }
 ```
