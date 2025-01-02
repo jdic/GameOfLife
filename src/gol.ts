@@ -4,10 +4,11 @@ import { countNeighbors, createBoard } from '@/utils/boardUtils'
 export class GameOfLife
 {
   private board: Board
-  private width: number = 50
-  private height: number = 15
   private intervalId?: Timer
   private generation: number = 0
+
+  width: number = 50
+  height: number = 15
 
   constructor(options?: Options)
   {
