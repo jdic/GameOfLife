@@ -31,7 +31,7 @@ class GameOfLife
 
     if (live && (neighbors < 2 || neighbors > 3)) return false
     if (!live && neighbors === 3) return true
-    
+
     return live
   }
 
@@ -44,7 +44,7 @@ class GameOfLife
       for (let dy = -1; dy <= 1; dy++)
       {
         if (dx === 0 && dy === 0) continue
-        
+
         const nx = x + dx
         const ny = y + dy
 
