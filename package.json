@@ -1,9 +1,13 @@
 {
-  "name": "lifegame",
+  "name": "gameoflife",
   "module": "app.ts",
+  "scripts": {
+    "start": "bun app.ts",
+    "start:dev": "bun --hot app.ts"
+  },
   "type": "module",
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
